@@ -238,9 +238,9 @@ int	main(int argc, char *argv[])
 	while (1)
 	{
 		line = read_lines(fd);
-		printf("%s", line);
 		if (line == NULL)
 			break ;
+                printf("%s", line);
 		free(line);
 	}
 	return (0);
